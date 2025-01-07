@@ -1,0 +1,330 @@
+/* Global Reset and Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 70px;
+    padding: 0 20px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Optional box-shadow for visual depth */
+}
+
+.navbar-left img {
+    height: 50px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    padding: 0 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-right a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    
+}
+
+.navbar-right a:hover::after {
+    width: 100%;
+
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 87vh;
+    padding: 0 120px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.home-left {
+    width: 50%;
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.home-left h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-left h3 {
+    font-size: 24px;
+    color: #ff004f;
+    margin-bottom: 15px;
+}
+
+.home-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ff004f;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: rgba(234, 234, 236, 0.25) 0px 13px 27px -5px, rgba(255, 253, 253, 0.3) 0px 8px 16px -8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+}
+.logo{
+    padding:0px 8px;  
+    top:20px;
+    height:auto;
+    cursor: pointer;     
+}
+
+
+.home-right {
+    width: 40%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: -50px; /* Adjusted margin for better image alignment */
+}
+
+.home-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Optional shadow for image */
+}
+.home-right img:hover{
+    transform: scale(1.1);
+}
+.homw{
+    position: fixed;
+    top:97%;
+    right:20px;
+    bottom: 20px;
+    
+}
+.homw a{
+    text-decoration: none;
+    text-align: center;
+    color:rgb(231, 62, 90);
+    
+}
+#sect{
+    background-color: black;
+    
+}
+#sect p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding:10px;
+    font-weight: 400px;
+}
+/* Educational Section */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 90px 20px;
+}
+
+.box-container .boxes {
+    border: 1px solid #ff004f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px; /* Set a fixed width for boxes */
+    text-align: center;
+    overflow: hidden;
+    
+}
+.box-container .boxes:hover {
+    transform: scale(1.2); 
+    box-shadow: 3px 1px 3px 3px rgb(216, 79, 102);
+
+}
+
+.box-container .boxes h2 {
+    font-size: 30px;
+    color: #ff004f;
+    
+}
+
+.box-container .boxes h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.box-container .boxes p {
+    font-size: 16px;
+    color: #555;
+}
+
+#skill{
+    background-color: black;
+}
+#skill p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding:10px;
+    font-weight: 400px;
+}
+.skill_img{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.skills_icons img{
+    height:90px;
+    width:90px;
+    padding:60px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.skills_icons img:hover {
+    transform: scale(1.2); 
+}
+#Projects{
+    background-color: black;
+}
+#Projects p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding:10px;
+    font-weight: 400px;
+}
+.pr1{
+    text-align: center;
+    font-size: 30px;
+    margin: 70px;
+    
+    
+}
+.pr1 a{
+    text-decoration: none;
+    color: #333;
+    
+}
+.pr1 a:hover{
+    color:#ff004f;
+    transform: scale(1.2); 
+    box-shadow: 3px 1px 3px 3px rgb(216, 79, 102);
+}
+#contact{
+    
+    background-color: black;
+    
+}
+#contact p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding:10px;
+    font-weight: 400px;
+}
+.conc_img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+ }
+ .conc_icons img{
+     height:60px;
+     width:60px;
+     padding:60px;
+     cursor: pointer;
+     overflow: hidden;
+     transition: transform 0.3s ease;
+ }
+ .conc_icons img:hover {
+     transform: scale(1.2); 
+ }
+
+
+/* Responsive Design
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-left {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home-right {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .navbar-right {
+        padding: 0;
+    }
+
+    .navbar-right a {
+        padding: 15px;
+    }
+
+    .box-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box-container .boxes {
+        width: 80%; /* Make boxes more flexible on smaller screens */
+    /* }
+}
+
+@media (max-width: 480px) {
+    .home-left h1 {
+        font-size: 28px;
+    }
+
+    .home-left h3 {
+        font-size: 20px;
+    }
+
+    .box-container .boxes {
+        width: 100%; /* Full width for small screens */
+    /* }
+}  */
