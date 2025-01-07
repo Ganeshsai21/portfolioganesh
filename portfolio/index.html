@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.JVjUDJPqhMr-GqZWPKPBVwHaEW&pid=Api&P=0&h=180">
+
+        </div>
+        <div class="navbar-right">
+            <a href="#home">Home
+            <!-- <div class="drop-cont">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div> -->
+            </a>
+            <a href="#sect">Education</a>
+            
+            <a href="#skill">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        
+
+    </div>
+    <div id="home">
+        
+      
+        <div class="home-left">
+            <h3>Hello I'M</h3>
+            <h1 class="text" >GANESH <span style="color:#ff004f">DASU</span></h1>
+            <h3>And I'm a <span style="color:#ff004f">Frontend Developer</span></h3>
+           <p class="text">I'm , a versatile tech enthusiast with a strong commitment to knowledge sharing and innovation. My genuine love for AI adds an extra layer of excitement to my tech journey. </p><br>
+           <!-- <a href = "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+           Download = "test_image"> -->
+           <button type="button" onclick="window.open('/assests/ganesh_resume.docx')">Download CV</button>
+          
+          <a href="https://www.linkedin.com/in/ganesh-dasu-25958a286/" target="_blank">
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAX1JREFUSEvt1rFLVlEYx/HPCw4hNBi0CA0pLo4F1lCSglNjmyAIDYUhOCQJEYmDhA42hPYHCG21uEiJUVuQtDVoTdaogg61iPfIDS4PqSDn5RX1bPd3zn2+5/ec5zz31jRo1BrEdeLAg7iMJazUIyv/c/wZtyqwAcznhkfwA7wOkO/orDf4eQEYD5AdXKw3+DY+Bcgb9NcbnOI/xBha8Q73kVxnHSfuOh3X3SV04BfWDwsSHV/Fz/DCLB6V2mNMh/kWdCMV5rXK3DYWkW7KRtxEDvAIXh7ibg1d2KyuyQH+gwtHnM1TTOYGp3i7+IHfZdqjodR2r+cGJ8epxX4tA9/BezRVQGljzfj7T8uR6lcYDqlewN2gpWpP570/coDv4W2AzCAVXXXcwJec4L4i1R8C5BkmgtaDjweB28oiqb4zh6FSGC3OaioE7MVy0J4Ulf7iHHye6moNnL3iSs3+ZrgG6du6WmpX0B7mvxXNYitoR647NX8gwfjBjw1zvAfOjXIfeRRb7AAAAABJRU5ErkJggg=="/ class="logo" >
+           </a>
+          <a href="https://github.com/">
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAtZJREFUSEvlltmrjlEUxn+HUlyIzGQMZQiZyR8gynjhQsYc51whxYWiRClEUjJkigspQynl2sUxZqaUeSpDUmR27Odrv6d9lr2/732/m3Nh1Vvf+37rWc/ea6/1rF1DC1lNC/FSlLgVMB4YAPSAEv4N8BS4BPzOu5G8xH2BdcBcoFMi+EfgFLAFeFxpAZWI27hdrAfWAvqdx34BW102NrrF/kgByhErlefcMyYPW8TnKjALeB3Dp4j7AQ1A9ypJM5hIJwPPbJwYcUfgMjDIOz/yRaSCymMi+Q4M9s4PgEnApxAcIz4CLAqcpjrgBWA0sA0YBiiYHp2n3ocAWuBqQCmeAlwMYhxwKV9ejniCb4vQp79vlzy7zXx0RGqzzBqB4cD97IPd8XFgvmEYBdwqwgoMBe4ZzEFgWYy4NfAe6BAA3vqVvitI3N4fRc8Ap0LrFSMe688n5FjhBGN3QdLMXWe6z2CVCdVGM8lUz50xjqrkJ1USa7evDHaG14ZmxMq/qi80gcMiKbKGdsAXA2jKYFhctcB+4zgSuF2ELfDtDTw32DXAdpvqOV7kQ9+lwOEqiWcCZw12MXDUEksEmvrMA867gpteJfFp14azDXYccM0S613tZMfeQuBYQXJhSjsL7LNv1dLMtgKy1xVTHfDTi4ZaTHYI2BCpUrseDReNQxFbkxQvyT5a4lBxVgI3fIspC3+A68AO4ISJKj3f7PU8NfFGuIvEnRSxvu8EVnkHTZVuTgJPBheBmIR2AaRyKdsVxCz5xFbX1g8KrTArLgVeAHwD9iSiSyxCiczcbvqZ/DXEpdLSB7jid1vv+1sTppxJ4XTGoUmfJwIvLLDc1UdBtGO1mSryISBR6Jpgl1jo/8zuusVPi5GmUh3GleypSjXgdbX9AHROEEtaNYfVEbowbPJHE3WvdMvMQNqJUj7QTZd5CWL17UtfA3Y4/APJS1zheIv//f8R/wWu0n4fd8acIQAAAABJRU5ErkJggg=="/ class="logo">
+            </a>
+        </div>
+        <div class="home-right">
+            <img
+              src="/assests/ganesh.jpg"
+              draggable="false"
+              class="d-block mx-lg-auto img-fluid rounded-circle"
+              alt="image"
+              width="200"
+              height="100"
+              loading="eager"
+            />
+              
+
+        </div>
+        
+       
+    </div>
+    <div class="homw">
+    <a href="" >Home</a>
+    </div>
+    <div id="sect">
+        <p>Educational Qualifications</p>
+    </div>
+        
+    <!-- <div class="heading"> -->
+        
+    <div class="box-container">
+        <div class="boxes">
+            <h2>Graduated from<br></h2>
+            <h3>SR university</h3>
+            Year:2022-2026 <br><br> Cgpa-9.0
+        </div>
+        <div class="boxes">
+            <h2>Intermediate<br></h2>
+            <h3>Alphores College</h3>
+            Year:2020-2022 <br><br> Cgpa-95.0
+        </div>
+        <div class="boxes">
+            <h2>School from<br></h2>
+            <h3>VVHS</h3>
+            Year:2020 <br><br> Cgpa-10.0
+        </div>
+       
+    </div>
+    <div id="skill">
+        <p>Skills</p>
+    </div>
+    <div class="skill_img">
+        <div class="skills_icons">
+       <img src="/assests/html-5.png" alt="" class="zoom-img"> 
+       <img src="/assests/css-3.png" alt="" class="zoom-img">
+       <img src="/assests/js.png" alt="" class="zoom-img"><br>
+       <img src="/assests/python.png" alt="" class="zoom-img">
+       <img src="/assests/physics.png" alt="" class="zoom-img">
+       <img src="/assests/sql-server.png" alt="" class="zoom-img" >
+       </div>
+
+    </div>
+    <div id="Projects">
+        <p>Projects</p>
+    </div>
+    <div class="pr1">
+        <a href="/assests/tic tac toe/index.html">Tic Tac Toe</a><br><br><br>
+        <a href="/assests/tic tac toe/Weather App/index.html">Weather App</a>
+    </div>
+    <br>
+
+
+    <div id="contact">
+        <p>Contact Me</p>
+    </div>
+
+    <div class="conc_img">
+        <div class="conc_icons">
+        <a href="https://www.instagram.com/">
+       <img src="/assests/instagram.png" alt="" class="conc-img"> 
+       </a>
+       <a href="https://www.facebook.com/">
+       <img src="/assests/facebook.png" alt="" class="conc-img">
+        </a>
+        <a href="https://x.com/">
+       <img src="/assests/twitter.png" alt="" class="conc-img">
+       </a>
+    </div>
+       
+
+
+   
+</body>
+</html>
